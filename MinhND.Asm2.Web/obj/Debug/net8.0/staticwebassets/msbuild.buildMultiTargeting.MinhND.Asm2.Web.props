@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MinhND.Asm2.Web.props" />
+</Project>

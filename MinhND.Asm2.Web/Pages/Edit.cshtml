@@ -1,0 +1,32 @@
+﻿@page
+@model MinhND.Asm2.Web.Pages.EditModel
+@{
+    <h2>Edit</h2>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Product.ProductName" class="form-label">Product Name</label>
+            <input asp-for="Product.ProductName" class="form-control" />
+            <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Product.ProductImage" class="form-label">Image Url</label>
+            <input asp-for="Product.ProductImage" class="form-control" />
+            <span asp-validation-for="Product.ProductImage" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.UnitPrice" class="form-label">Price</label>
+            <input asp-for="Product.UnitPrice" class="form-control" />
+            <span asp-validation-for="Product.UnitPrice" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.QuantityPerUnit" class="form-label">Qty</label>
+            <input asp-for="Product.QuantityPerUnit" class="form-control" />
+            <span asp-validation-for="Product.QuantityPerUnit" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-page="/Index" class="btn btn-secondary">Back to List</a>
+    </form>
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinhND.Asm2.Web", "MinhND.Asm2.Web\MinhND.Asm2.Web.csproj", "{27A3F1EA-743D-43B6-9E4E-DB582F13239E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinhND.Asm2.Repo", "MinhND.Asm2.Repo\MinhND.Asm2.Repo.csproj", "{2C57BE2E-A13F-4128-A2AF-9D68F57B110C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A3F1EA-743D-43B6-9E4E-DB582F13239E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A3F1EA-743D-43B6-9E4E-DB582F13239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A3F1EA-743D-43B6-9E4E-DB582F13239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A3F1EA-743D-43B6-9E4E-DB582F13239E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C57BE2E-A13F-4128-A2AF-9D68F57B110C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C57BE2E-A13F-4128-A2AF-9D68F57B110C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C57BE2E-A13F-4128-A2AF-9D68F57B110C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C57BE2E-A13F-4128-A2AF-9D68F57B110C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {526E876D-E070-428F-9466-CE5F8F27BC99}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    @if (HttpContext.Session.GetString("Username") == null)
+    {
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    } else
+    {
+        <h1>Pizzas</h1>
+        <a asp-page="./Create" class="btn btn-success">Create new</a>
+        <table class="table table-hover table-striped mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pizza in Model.Product)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => pizza.ProductName)</td>
+                        <td>
+                            <img src="@Url.Content(pizza.ProductImage)" alt="Pizza Image" class="img-thumbnail" style="width: 100px; height: 100px;" />
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => pizza.QuantityPerUnit)</td>
+                        <td>$@Html.DisplayFor(modelItem => pizza.UnitPrice)</td>
+                        <td>@Html.DisplayFor(modelItem => pizza.Category.CategoryName)</td>
+
+                        <td>
+
+                            <a asp-page="./Edit" asp-route-id="@pizza.ProductID" class="btn btn-primary">Edit</a>
+                            <a asp-page="./Details" asp-route-id="@pizza.ProductID" class="btn btn-secondary">Details</a>
+                            <a asp-page="./Delete" asp-route-id="@pizza.ProductID" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+</div>
