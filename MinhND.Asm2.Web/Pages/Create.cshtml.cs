@@ -15,11 +15,12 @@ namespace MinhND.Asm2.Web.Pages
 
         [BindProperty]
         public Product Product { get; set; }
-        public List<Category> Category { get; set; }
+        public Category Category { get; set; }
+        public List<Category> Categories { get; set; }
         private string errorMessage;
         public IActionResult OnGet()
         {
-            Category = _unitOfWork.CategoryRepository.Get().ToList();
+            Categories = _unitOfWork.CategoryRepository.Get().ToList();
             return Page();
         }
 
@@ -27,7 +28,6 @@ namespace MinhND.Asm2.Web.Pages
         {
             int maxProductId = _unitOfWork.ProductRepository.Get().Max().ProductID;
             int productId = maxProductId + 1;
-
             try
             {
                 Product newProduct = new Product
@@ -37,6 +37,7 @@ namespace MinhND.Asm2.Web.Pages
                     ProductImage = Product.ProductImage,
                     QuantityPerUnit = Product.QuantityPerUnit,
                     UnitPrice = Product.UnitPrice,
+                    CategoryID = Product.CategoryID,
                 };
 
                 _unitOfWork.ProductRepository.AddEntity(newProduct);
@@ -47,7 +48,7 @@ namespace MinhND.Asm2.Web.Pages
             {
                 throw new Exception(ex.Message);
             }
-            
         }
+
     }
 }

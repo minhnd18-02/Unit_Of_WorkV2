@@ -23,7 +23,6 @@ namespace MinhND.Asm2.Web.Pages
             {
                 return NotFound();
             }
-            Category = product.Category;
             Product = product;
             return Page();
         }

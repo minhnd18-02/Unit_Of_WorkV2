@@ -6,20 +6,30 @@
         <form method="post">
             <div class="mb-3">
                 <label for="ProductName" class="form-label">Product Name</label>
-                <input type="text" class="form-control" id="ProductName" name="ProductName" placeholder="Enter Product Name">
+                <input type="text" class="form-control" id="ProductName" name="Product.ProductName" placeholder="Enter Product Name">
             </div>
             <div class="mb-3">
                 <label for="ProductImage" class="form-label">Product Image</label>
-                <input type="text" class="form-control" id="ProductImage" name="ProductImage" placeholder="Enter image URL">
+                <input type="text" class="form-control" id="ProductImage" name="Product.ProductImage" placeholder="Enter image URL">
             </div>
             <div class="mb-3">
                 <label for="QuantityPerUnit" class="form-label">Quantity</label>
-                <input type="number" class="form-control" id="QuantityPerUnit" name="QuantityPerUnit" placeholder="Enter Quantity">
+                <input type="number" class="form-control" id="QuantityPerUnit" name="Product.QuantityPerUnit" placeholder="Enter Quantity">
             </div>
             <div class="mb-3">
                 <label for="UnitPrice" class="form-label">Price</label>
-                <input type="number" class="form-control" id="UnitPrice" name="UnitPrice" placeholder="Enter Price">
+                <input type="number" class="form-control" id="UnitPrice" name="Product.UnitPrice" placeholder="Enter Price">
             </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" name="Product.CategoryID">
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category.CategoryID">@category.CategoryName</option>
+                    }
+                </select>
+            </div>
+    
             <button type="submit" class="btn btn-primary">Submit</button>
             <a asp-page="/Index" class="btn btn-secondary">Back to List</a>
         </form>
