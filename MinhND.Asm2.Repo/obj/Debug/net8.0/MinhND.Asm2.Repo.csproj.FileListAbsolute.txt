@@ -10,3 +10,4 @@ D:\Documents\Repositories\MinhND.Asm2.Web\MinhND.Asm2.Repo\obj\Debug\net8.0\Minh
 D:\Documents\Repositories\MinhND.Asm2.Web\MinhND.Asm2.Repo\obj\Debug\net8.0\refint\MinhND.Asm2.Repo.dll
 D:\Documents\Repositories\MinhND.Asm2.Web\MinhND.Asm2.Repo\obj\Debug\net8.0\MinhND.Asm2.Repo.pdb
 D:\Documents\Repositories\MinhND.Asm2.Web\MinhND.Asm2.Repo\obj\Debug\net8.0\ref\MinhND.Asm2.Repo.dll
+D:\Documents\Repositories\MinhND.Asm2.Web\MinhND.Asm2.Repo\obj\Debug\net8.0\MinhND.Asm2.Repo.sourcelink.json

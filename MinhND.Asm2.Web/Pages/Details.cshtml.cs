@@ -19,10 +19,13 @@ namespace MinhND.Asm2.Web.Pages
         public IActionResult OnGet(int? id)
         {
             var product = _unitOfWork.ProductRepository.GetByID(id);
+
+            var category = _unitOfWork.CategoryRepository.GetByID(product.CategoryID);
             if (product == null)
             {
                 return NotFound();
             }
+            Category = category;
             Product = product;
             return Page();
         }

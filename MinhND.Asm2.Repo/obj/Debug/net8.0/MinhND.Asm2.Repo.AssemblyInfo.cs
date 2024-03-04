@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MinhND.Asm2.Repo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a48e716d31f807f700ee63826f7ef37cb62015f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MinhND.Asm2.Repo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MinhND.Asm2.Repo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
